@@ -1,6 +1,6 @@
 [build]
 publish = "frontend/dist"
-command = "CI=false npm run build" # Change this line
+command = "CI=false npm run build"
 
 [[redirects]]
 from = "/*"
