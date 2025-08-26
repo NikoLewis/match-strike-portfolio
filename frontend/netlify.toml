@@ -1,0 +1,8 @@
+[build]
+publish = "frontend/dist"  # Or 'frontend/build' depending on your build process
+command = "npm run build"  # Or 'yarn build'
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
