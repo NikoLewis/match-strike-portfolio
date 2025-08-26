@@ -1,0 +1,32 @@
+@import "tailwindcss";
+/*reference to my fonts below*/
+/*--font-poppins: 'Poppins', sans-serif;*/
+
+/*1041 x 494 my loaner laptops fullscreen*/
+@theme {
+    --color-dark-purple-start: #370258;
+    --color-dark-purple-end: #1a012f;
+    --color-accent-cyan: #00bcd4;
+    --color-accent-pink: #FF69B4;
+    --font-mono: 'Monoserrat', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-poppins: 'poppins', sans-serif;
+    --breakpoint-md: 1020px;
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    color:var(--color-accent-pink);
+    font-family: var(--font-poppins);
+    font-size: var(--text-5xl);
+}
+
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-accent-cyan);
+}
