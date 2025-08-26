@@ -1,6 +1,6 @@
 [build]
-publish = "frontend/dist"  # Or 'frontend/build' depending on your build process
-command = "npm run build"  # Or 'yarn build'
+publish = "frontend/dist"
+command = "CI=false npm run build" # Change this line
 
 [[redirects]]
 from = "/*"
