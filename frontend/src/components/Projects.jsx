@@ -43,7 +43,7 @@ const projects = [
         technologies: ['Javascript', 'Node', 'React', 'Prisma', 'Supabase', 'Render'],
         image: '/Ascent.png',
         githubLink: 'https://github.com/AcademicAscent/trackR-app',
-        liveLink: '#',
+        liveLink: 'https://antventure-api.onrender.com/api/goals',
     }
 ];
 
