@@ -23,8 +23,8 @@ function App() {
   return (
     <>
         <Router>
-            <div className="relative min-h-screen bg-gradient-to-br from-dark-purple-start to-dark-purple-end text-white font-lato">
-                {/* Navbar will be fixed at the top */}
+            <div id="fixed-navbar" className="relative min-h-screen bg-gradient-to-br from-dark-purple-start to-dark-purple-end text-white font-lato">
+
 
                 <Navbar />
 
@@ -36,14 +36,15 @@ function App() {
                                 <About />
                                 <Skills />
                                 <RelevantExperience />
-                                <OtherExperience />
-                                <Projects />
-                                <Education />
                                 <Testimonials />
+                                <Projects />
                                 <Contact />
+                                <Education />
+                                <OtherExperience />
+
                             </>
                         } />
-                        {/* Add more routes here for individual project pages if needed later */}
+                      
                     </Routes>
                 </main>
 

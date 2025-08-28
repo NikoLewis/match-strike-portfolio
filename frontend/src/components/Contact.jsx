@@ -1,12 +1,54 @@
 import React from 'react';
+import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa'; // Import icons
+import { HiOutlineMail } from 'react-icons/hi';
 
 function Contact() {
-    // your component code here
     return (
-        <>
-            <h3>Contact</h3>
-            <hr className="my-8 border-t-2 border-gray-300" />
-        </>
+        <section id="contact" className="container mx-auto px-4 py-20 text-white text-center">
+            <h2 className="text-5xl font-montserrat font-bold mb-12">Get In Touch</h2>
+            <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10 font-lato text-indigo-200">
+                I'm always open to new opportunities and collaborations. Feel free to connect with me!
+            </p>
+
+            <div className="flex justify-center space-x-8 mb-10">
+                <a
+                    href="mailto:kinseyftw@gmail.com" // Your email
+                    className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110"
+                    target="_blank" rel="noopener noreferrer"
+                >
+                    <HiOutlineMail className="text-6xl text-accent-cyan group-hover:text-accent-pink drop-shadow-md transition-colors duration-300" />
+                    <span className="text-lg font-montserrat mt-2">Email Me</span>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/nikolewis" // Your LinkedIn
+                    className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110"
+                    target="_blank" rel="noopener noreferrer"
+                >
+                    <FaLinkedin className="text-6xl text-accent-cyan group-hover:text-accent-pink drop-shadow-md transition-colors duration-300" />
+                    <span className="text-lg font-montserrat mt-2">LinkedIn</span>
+                </a>
+                <a
+                    href="https://github.com/nikolewis" // Replace with your GitHub
+                    className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110"
+                    target="_blank" rel="noopener noreferrer"
+                >
+                    <FaGithub className="text-6xl text-accent-cyan group-hover:text-accent-pink drop-shadow-md transition-colors duration-300" />
+                    <span className="text-lg font-montserrat mt-2">GitHub</span>
+                </a>
+                <a
+                    href="https://dev.to/niko"
+                    className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110"
+                    target="_blank" rel="noopener noreferrer"
+                >
+                    <FaDev className="text-6xl text-accent-cyan group-hover:text-accent-pink drop-shadow-md transition-colors duration-300" />
+                    <span className="text-lg font-montserrat mt-2">Dev.to</span>
+                </a>
+            </div>
+
+            <p className="text-sm text-gray-500 font-lato mt-16">
+                Designed & Built by Niko Lewis
+            </p>
+        </section>
     );
 }
 

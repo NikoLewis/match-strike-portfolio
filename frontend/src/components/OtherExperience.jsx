@@ -1,28 +1,6 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
-const notEngTechExperiences = [
-    {
-        title: 'Software Engineer',
-        company: 'Ruby Together',
-        duration: 'May 2019 - August 2019 (4 months)',
-        description: 'Contributed to Ruby open source projects through the RubyMe program, improving skills and confidence by pairing with Senior Software Engineer mentors. Gained skills and experience needed for continued growth and success in careers.',
-        achievements: [
-            "Collaborated on Ruby open source software for 4 months with Senior Software Engineer mentors.",
-            "Enhanced skills and confidence in early-career development through practical contributions.",
-            "Gained valuable experience crucial for continued career growth in software engineering."
-        ]
-    },
-    {
-        title: 'Mobile Application Developer',
-        company: 'We Build Black',
-        duration: 'June 2022 - June 2024 (2 years 1 month)',
-        description: 'Bridged the gap between theory and practice, refining skills in Kotlin, Android Studio, app design, teamwork, agile practices, version control, code reviews, testing, and bi-weekly pair programming with mentor.',
-        achievements: [
-            "Developed PAWsitive app empowering animal care professionals to promote services, schedule clients, receive payments, and solicit reviews independent of Rover.com or Wag.",
-            "Refined skills in Kotlin, Android Studio, app design, teamwork, agile practices, version control, code reviews, testing.",
-            "Engaged in bi-weekly pair programming with mentors."
-        ]
-    },
+const notEngTechExperience = [
     {
         title: 'Founder',
         company: 'PAWsitive Vibes',
@@ -32,17 +10,6 @@ const notEngTechExperiences = [
             "Performed 200+ skilled animal care contracts while maintaining a 100% client satisfaction rating, resulting in a 40% word-of-mouth referral rate (10x the industry average), and rates 3x the industry average.",
             "Coordinated seamless collaborative care with veterinarians, walkers, trainers, cleaning-staff, emergency contacts, daycare facilities, and partner sitters, contributing to receiving an additional $15k a year in tips.",
             "Implemented engaging branding campaign and sales techniques converting 70% of new client interactions into paid bookings, and being recognized as a 'Star Sitter' on Rover.com's marketplace."
-        ]
-    },
-    {
-        title: 'Software Engineer and Product Manager',
-        company: 'The Practical Dev (Dev.to)',
-        duration: 'June 2017 - September 2017 (4 months)',
-        description: 'Apprenticeship mentored in scaling a social media application through weaving together strong design aesthetics and product building with technical know-how. Developed a passion for translating concepts into living-breathing products, dev relations, and utilizing UX/UI principles to deliver satisfying user experiences.',
-        achievements: [
-            "Contributed to full SDLC of maintaining a growing message board platform and programmer community.",
-            "Took ownership of product management, UX/UI, user engagement, and made regular technical journalism contributions.",
-            "Partnered on research and design to define and deliver new features."
         ]
     },
     {
@@ -57,64 +24,79 @@ const notEngTechExperiences = [
             "Trained staff and facilitated smooth and timely transitions of technicians to PMO procedural changes."
         ]
     },
-    {
-        title: 'Application Support Intern',
-        company: 'New York College of Podiatric Medicine',
-        duration: 'August 2014 - March 2015 (8 months)',
-        description: 'Provided technical/application support and issue resolution for 500+ users\' workstations and mobile devices. Responsible for asset tagging/management, data back-ups, migrations, deployments, configurations, and pc builds, refurbishment, and responsible disposal.',
-        achievements: [
-            "Provided technical/application support and issue resolution for 500+ users' workstations and mobile devices.",
-            "Responsible for asset tagging/management, data back-ups, migrations, deployments, configurations, and pc builds, refurbishment, and responsible disposal.",
-            "Assisted with monitoring systems, technical communication, repair efforts, and training users to efficiently use technologies."
-        ]
-    },
-    {
-        title: 'Clinic Coordinator',
-        company: 'New York College of Podiatric Medicine',
-        duration: 'September 2013 - August 2014 (1 year)',
-        description: 'Trained new-hires to use health information technology and performed weekly electronic quality assurance. Primarily responsible for managing dispensary, sterilizing medical equipment, day-to-day medical record management, insurance verification, and authorizations using digital databases. Operated and maintained clinical machinery according to OSHA standards, supervised machine repair efforts, and reported timely machine status updates and dispensary supply inventory to the VP of Operations and Clinic Administrator.',
-        achievements: [
-            "Trained new-hires to use health information technology and performed weekly electronic quality assurance.",
-            "Primarily responsible for managing dispensary, sterilizing medical equipment, day-to-day medical record management, insurance verification, and authorizations using digital databases.",
-            "Operated and maintained clinical machinery according to OSHA standards, supervised machine repair efforts, and reported timely machine status updates and dispensary supply inventory to the VP of Operations and Clinic Administrator."
-        ]
-    },
-    {
-        title: 'Teaching Assistant and Freelance Technicians Team Lead',
-        company: 'Per Scholas',
-        duration: 'December 2014 - January 2015 (2 months)',
-        description: 'Planned and provided customized educational support and instruction on the topics of technology, corporate culture, professional time management, digital learning resources, and troubleshooting in group and one-on-one settings. Technician team lead during Grace Institute computer lab installation.',
-        achievements: [
-            "Planned and provided customized educational support and instruction on the topics of technology, corporate culture, professional time management, digital learning resources, and troubleshooting in group and one-on-one settings.",
-            "Technician team lead during Grace Institute computer lab installation."
-        ]
-    },
-    {
-        title: 'Project Manager and Assistant Human Resources Manager',
-        company: 'Lewis Gallery Incorporated',
-        duration: 'August 2007 - August 2012 (5 years 1 month)',
-        description: 'Developed and implemented projects from conception to completion, ensuring all targets were met, and stakeholder satisfaction. Monitored and documented all aspects of project progress and communicated updates to stakeholders. Worked cross-functionally to resolve issues/implement changes to achieve targets and nurtured healthy client relationships.',
-        achievements: [
-            "Developed and implemented projects from conception to completion, ensuring all targets were met, and stakeholder satisfaction.",
-            "Monitored and documented all aspects of project progress and communicated updates to stakeholders.",
-            "Worked cross-functionally to resolve issues/implement changes to achieve targets and nurtured healthy client relationships.",
-            "Recruited, developed, and on-boarded team members. Developed and managed employee training, mentoring, and team building programs.",
-            "Performed business and trends research, program data collection and analysis, and reporting."
-        ]
-    }
 ];
 
+const OtherExperienceItem = ({ experience, index }) => {
+    const itemRef = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsVisible(true);
+                        observer.unobserve(entry.target); // Stop observing once visible
+                    }
+                });
+            },
+            { threshold: 0.1 } // Trigger when 10% of the item is visible
+        );
 
-function OtherExperience() {
-    // your component code here
+        if (itemRef.current) {
+            observer.observe(itemRef.current);
+        }
+
+        return () => {
+            if (itemRef.current) {
+                observer.unobserve(itemRef.current);
+            }
+        };
+    }, []);
+
+    const animationClass = isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10';
+    const isEven = index % 2 === 0;
+
     return (
-        <>
-            <h3>Other Experience</h3>
-            <hr className="my-8 border-t-2 border-gray-300" />
-
-        </>
+        <div
+            ref={itemRef}
+            className={`relative mb-8 p-6 rounded-lg shadow-xl bg-gray-800 bg-opacity-70 transition-all duration-700 ease-out ${animationClass} 
+            w-full mx-auto // Default full width and centered for small screens
+            timelineBp:max-w-[45%] // Max width for larger screens
+            ${isEven ? 'timelineBp:self-start timelineBp:mr-auto' : 'timelineBp:self-end timelineBp:ml-auto'}
+            `}
+        >
+            <h3 className="text-2xl font-montserrat font-semibold text-accent-cyan">{experience.title}</h3>
+            <p className="text-xl text-accent-pink mt-1">{experience.company}</p>
+            <p className="text-md text-gray-400 mt-1">{experience.duration}</p>
+            <ul className="list-disc list-inside text-gray-300 mt-4 space-y-2">
+                {experience.achievements.map((achievement, i) => (
+                    <li key={i}>{achievement}</li>
+                ))}
+            </ul>
+        </div>
     );
+};
+
+const OtherExperience = () => {
+    return (
+        <section id="additional-experience" className="w-full py-20 text-white">
+            <div className="container mx-auto px-4">
+                <h2 className="text-5xl font-montserrat font-bold text-center mb-16">Additional Experience</h2>
+                <div className="relative flex flex-col items-center timelineBp:flex-row timelineBp:justify-between">
+                    {/* Vertical timeline line - MOVED OUTSIDE THE FLEX CONTAINER */}
+                    {/* The timeline line should be in a separate positioning context if it's meant to span the entire section */}
+                    {/* For now, it remains in the same parent but we adjust its positioning */}
+                    {/* This line will now act as the central divider for the row layout */}
+                    <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-accent-cyan opacity-50 z-0 timelineBp:left-auto timelineBp:right-auto"></div>
+                    {notEngTechExperience.map((exp, index) => (
+                        <OtherExperienceItem key={index} experience={exp} index={index} />
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+
 }
 
 export default OtherExperience;

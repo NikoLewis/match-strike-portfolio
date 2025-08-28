@@ -1,13 +1,10 @@
 import React from 'react';
 
 function Footer() {
-    // your component code here
     return (
-        <>
-            <hr className="my-8 border-t-2 border-gray-300" />
-            <h3>Footer</h3>
-
-        </>
+        <footer className="py-8 text-center text-gray-400 text-sm font-lato bg-dark-purple-end/50">
+            <p>&copy; {new Date().getFullYear()} Niko Lewis. All rights reserved.</p>
+        </footer>
     );
 }
 

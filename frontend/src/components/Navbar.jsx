@@ -2,28 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Hero from './Hero';
 
-
-// <nav className={`fixed w-full z-50 py-4 transition-all duration-300 ${navClass}`}>
-//     <div className="container mx-auto px-4 flex justify-between items-center">
-//         <Link to="#home" className="text-white text-3xl font-montserrat font-bold flex items-center space-x-2">
-//             <span className="flex-shrink-0">Niko Lewis</span>
-//             <span className="flex-shrink-0 flex items-center space-x-1">
-//             <span className="text-accent-cyan text-2xl font-mono">{`<`}</span>
-//             <img src="/pastelfeather.png" className="w-8 h-8" alt="Niko Lewis Portfolio Feather Logo"/>
-//             <span className="text-accent-cyan text-2xl font-mono">{`/>`}</span>
-//         </span>
-//         </Link>
-//         <div className="flex space-x-6 text-lg font-lato">
-//             <a href="#about" className="text-white hover:text-accent-cyan transition-colors duration-200">About</a>
-//             <a href="#skills" className="text-white hover:text-accent-cyan transition-colors duration-200">Skills</a>
-//             <a href="#experience" className="text-white hover:text-accent-cyan transition-colors duration-200">Experience</a>
-//             <a href="#projects" className="text-white hover:text-accent-cyan transition-colors duration-200">Projects</a>
-//             <a href="#education" className="text-white hover:text-accent-cyan transition-colors duration-200">Education</a>
-//             <a href="#testimonials" className="text-white hover:text-accent-cyan transition-colors duration-200">Testimonials</a>
-//             <a href="#contact" className="text-white hover:text-accent-cyan transition-colors duration-200">Contact</a>
-//         </div>
-//     </div>
-// </nav>
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
 
