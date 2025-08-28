@@ -30,7 +30,7 @@ const testimonials = [
         formerly: "Learning Management System Assistant Admin @Perscholas",
     },
     {
-        quote: "Niko is the most resourceful person I know. Her knowledge of any subject is seemingly limitless. Her people skills are enormous, and her troubleshooting skills are the best I’ve seen. She is an asset to any environment.",
+        quote: "Niko always delivers. And when she delivers you know it will be clear and well-executed. She is always pushing herself to learn more and uses technology to bridge the gap between the virtual world and the real world. Plus, she is one of the funniest people I have ever met and can make the most mundane tasks a pleasure. If there is a position on a Dev team, Niko is more than a great addition. .",
         author: "Michael Dinall, Software Engineer @Showtime",
         formerly: "Software Engineer @Chief",
     },

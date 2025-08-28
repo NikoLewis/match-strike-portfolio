@@ -16,7 +16,7 @@ const projects = [
         technologies: ['Kotlin', 'Android Studio', 'App Design', 'Firebase'],
         image: '/PAWsitive.png',
         githubLink: '#',
-        liveLink: '#',
+        liveLink: '#',//these are placeholders for when I build
     },
     {
         id: 2,
@@ -34,7 +34,7 @@ const projects = [
         technologies: ['HTML', 'CSS', 'JavaScript', 'Figma'],
         image: '/claritydashboard.webp',
         githubLink: 'https://claritydashboard.netlify.app/',
-        liveLink: 'https://your-username.github.io/clarity-dashboard',
+        liveLink:"https://github.com/NikoLewis/clarity-dashboard" ,
     },
     {
         id: 4,

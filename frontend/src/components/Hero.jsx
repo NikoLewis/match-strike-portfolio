@@ -32,8 +32,6 @@ const Hero = () => {
                         </p>
                     </div>
                 </div>
-
-                {/* Placeholder for dynamic background (e.g., subtle particles or a hero image) */}
                 <div className="absolute inset-0 z-0 opacity-20" style={{ backgroundImage: 'url("https://placehold.co/1920x1080/0A0014/1A012F?text=Subtle+Background+Animation")' /* Replace with actual animated background */ }}></div>
             </section>
 
