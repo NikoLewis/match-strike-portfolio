@@ -32,7 +32,7 @@ const Hero = () => {
                         </p>
                     </div>
                 </div>
-                <div className="absolute inset-0 z-0 opacity-20 bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: 'url("public/Technologist.webp")'}}></div>
+                <div className="absolute inset-0 z-0 opacity-20 bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: 'url("/Technologist.webp")'}}></div>
             </section>
 
         </>
