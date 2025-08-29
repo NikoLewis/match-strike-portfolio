@@ -30,7 +30,7 @@ const About = () =>  {
 
                     </div>
                     <div className="md:col-span-1 flex justify-center">
-                        {/* Placeholder for an image or a simple animated visual */}
+
                         <img
                             src="/portraitNikoLewis.jpeg"
                             alt="Niko Lewis"

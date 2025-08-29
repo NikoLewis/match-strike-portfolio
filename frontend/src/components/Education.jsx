@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaCertificate } from 'react-icons/fa'; // Import icons
+import { FaGraduationCap, FaCertificate } from 'react-icons/fa';
 
 const educationEntries = [
     {

@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { useState } from 'react'
 import './App.css'
 
 
-//my section components
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';

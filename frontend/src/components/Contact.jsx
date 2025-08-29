@@ -12,7 +12,7 @@ function Contact() {
 
             <div className="flex justify-center space-x-8 mb-10">
                 <a
-                    href="mailto:kinseyftw@gmail.com" // Your email
+                    href="mailto:kinseyftw@gmail.com"
                     className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110"
                     target="_blank" rel="noopener noreferrer"
                 >
@@ -20,7 +20,7 @@ function Contact() {
                     <span className="text-lg font-montserrat mt-2">Email Me</span>
                 </a>
                 <a
-                    href="https://www.linkedin.com/in/nikolewis" // Your LinkedIn
+                    href="https://www.linkedin.com/in/nikolewis"
                     className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110"
                     target="_blank" rel="noopener noreferrer"
                 >
@@ -28,7 +28,7 @@ function Contact() {
                     <span className="text-lg font-montserrat mt-2">LinkedIn</span>
                 </a>
                 <a
-                    href="https://github.com/nikolewis" // Replace with your GitHub
+                    href="https://github.com/nikolewis"
                     className="flex flex-col items-center group transform transition-transform duration-300 hover:scale-110"
                     target="_blank" rel="noopener noreferrer"
                 >
@@ -45,9 +45,7 @@ function Contact() {
                 </a>
             </div>
 
-            <p className="text-sm text-gray-500 font-lato mt-16">
-                Designed & Built by Niko Lewis
-            </p>
+
         </section>
     );
 }

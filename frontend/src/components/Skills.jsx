@@ -37,7 +37,7 @@ const skills4 = [
     { name: 'Figma', icon: SiFigma },
     { name: 'GitHub', icon: SiGithub },
 ];
-// Inline CSS for marquee animation
+
 const marqueeKeyframes = `
   @keyframes marquee {
     0% { transform: translateX(0%); }

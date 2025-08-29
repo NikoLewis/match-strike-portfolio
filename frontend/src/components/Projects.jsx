@@ -3,10 +3,7 @@ import {FaGithub} from 'react-icons/fa';
 import {HiOutlineExternalLink} from 'react-icons/hi'
 
 
-// go into significant detail on just 2 projects quality over quantity
-//
 
-// test project data
 
 const projects = [
     {
@@ -15,8 +12,8 @@ const projects = [
         description: 'Developed an Android mobile application using Kotlin and Android Studio. The app empowers animal care professionals to promote their services, schedule clients, receive payments, and solicit reviews, operating independently of third-party platforms like Rover.com or Wag.',
         technologies: ['Kotlin', 'Android Studio', 'App Design', 'Firebase'],
         image: '/PAWsitive.png',
-        githubLink: '#',
-        liveLink: '#',//these are placeholders for when I build
+        githubLink: '#', //these are placeholders for when I build this out more
+        liveLink: '#',//these are placeholders for when I build this out more
     },
     {
         id: 2,
@@ -24,8 +21,8 @@ const projects = [
         description: 'A real-time web application allowing multiple users to collaboratively create and edit recipes. Features include real-time synchronization, recipe search using RediSearch, and a favoriting system, all built with React, Node.js, and Redis.',
         technologies: ['React', 'Node.js', 'Redis Stack', 'Socket.io', 'Tailwind CSS'],
         image: '/Tastebuddies.png',
-        githubLink: '#',
-        liveLink: '#',
+        githubLink: '#', //these are placeholders for when I build this out more
+        liveLink: '#',//these are placeholders for when I build this out more
     },
     {
         id: 3,

@@ -36,11 +36,11 @@ const OtherExperienceItem = ({ experience, index }) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setIsVisible(true);
-                        observer.unobserve(entry.target); // Stop observing once visible
+                        observer.unobserve(entry.target);
                     }
                 });
             },
-            { threshold: 0.1 } // Trigger when 10% of the item is visible
+            { threshold: 0.1 }
         );
 
         if (itemRef.current) {
@@ -84,10 +84,6 @@ const OtherExperience = () => {
             <div className="container mx-auto px-4">
                 <h2 className="text-5xl font-montserrat font-bold text-center mb-16">Additional Experience</h2>
                 <div className="relative flex flex-col items-center timelineBp:flex-row timelineBp:justify-between">
-                    {/* Vertical timeline line - MOVED OUTSIDE THE FLEX CONTAINER */}
-                    {/* The timeline line should be in a separate positioning context if it's meant to span the entire section */}
-                    {/* For now, it remains in the same parent but we adjust its positioning */}
-                    {/* This line will now act as the central divider for the row layout */}
                     <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-accent-cyan opacity-50 z-0 timelineBp:left-auto timelineBp:right-auto"></div>
                     {notEngTechExperience.map((exp, index) => (
                         <OtherExperienceItem key={index} experience={exp} index={index} />
