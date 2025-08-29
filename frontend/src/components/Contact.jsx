@@ -3,13 +3,21 @@ import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa'; // Import icons
 import { HiOutlineMail } from 'react-icons/hi';
 
 function Contact() {
+    // style={{ backgroundImage: "url('/CuriousKittenAdamGonzales.jpg')" }}// experimenting with images
     return (
-        <section id="contact" className="container mx-auto px-4 py-20 text-white text-center">
-            <h2 className="text-5xl font-montserrat font-bold mb-12">Get In Touch</h2>
-            <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10 font-lato text-indigo-200">
-                I'm always open to new opportunities and collaborations. Feel free to connect with me!
-            </p>
+        <section id="contact" className="container mx-auto px-4 py-20 text-white text-center  bg-contain bg-no-repeat" >
 
+
+
+
+            <div id="cat-container" className="flex items-center  justify-around ">
+                <img src="/CuriousKittenAdamGonzales.jpg" className="bg-no-repeat bg-contain max-w-2/4 "/>
+
+                <div id="contact-container" className="flex items-center  justify-between content-between flex-col">
+                    <h2 className="text-5xl font-montserrat font-bold mb-12">Say Hi!</h2>
+                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10 font-lato text-indigo-200">
+                        Open to collaboration and opportunities, lets build something amazing together!
+                    </p>
             <div className="flex justify-center space-x-8 mb-10">
                 <a
                     href="mailto:kinseyftw@gmail.com"
@@ -43,6 +51,8 @@ function Contact() {
                     <FaDev className="text-6xl text-accent-cyan group-hover:text-accent-pink drop-shadow-md transition-colors duration-300" />
                     <span className="text-lg font-montserrat mt-2">Dev.to</span>
                 </a>
+            </div>
+                </div>
             </div>
 
 
