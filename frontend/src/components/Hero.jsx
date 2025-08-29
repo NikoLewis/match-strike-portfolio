@@ -32,7 +32,7 @@ const Hero = () => {
                         </p>
                     </div>
                 </div>
-                <div className="absolute inset-0 z-0 opacity-20" style={{ backgroundImage: 'url("https://placehold.co/1920x1080/0A0014/1A012F?text=Subtle+Background+Animation")'}}></div>
+                <div className="absolute inset-0 z-0 opacity-20 bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: 'url("public/Technologist.webp")'}}></div>
             </section>
 
         </>
