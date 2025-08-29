@@ -1,18 +1,17 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa'; // Import icons
+import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 
 function Contact() {
-    // style={{ backgroundImage: "url('/CuriousKittenAdamGonzales.jpg')" }}// experimenting with images
     return (
-        <section id="contact" className="container mx-auto px-4 py-20 text-white text-center  bg-contain bg-no-repeat" >
-            <div id="cat-container" className="flex items-center  justify-between ">
+        <section id="contact" className=" mx-auto px-4 py-20 text-white text-center w-full" >
+            <div id="cat-container" className="flex items-center  justify-around ">
                 <img src="/CuriousKittenAdamGonzales.jpg" className="bg-no-repeat bg-contain max-w-2/4 "/>
-
-                <div id="contact-container" className="flex items-center  justify-between content-between flex-col">
+                <div id="contact-container" className="flex  content-center items-center  justify-between content-around flex-col">
                     <h2 className="text-5xl font-montserrat font-bold mb-12">Say Hi!</h2>
-                    <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10 font-lato text-indigo-200">
-                        Open to collaboration and opportunities, lets build something amazing together!
+                    <p className="text-lg md:text-xl  max-w-3/4 mx-auto mb-10 font-lato text-indigo-200">
+                        Open to collaboration and opportunities, <br/>
+                        lets build something amazing together!
                     </p>
             <div className="flex justify-center space-x-8 mb-10">
                 <a

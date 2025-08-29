@@ -23,7 +23,7 @@ const Navbar = () => {
             <nav className={`fixed w-full z-50 py-4 transition-all duration-300 ${navClass}`}>
                 <div className="container mx-auto px-4 flex flex-col justify-center items-center space-y-4 md:flex-row md:justify-between md:items-center md:space-y-0">
                     <a href="#" className="text-white text-3xl font-montserrat font-bold flex items-center space-x-2">
-                        <span>Niko Lewis</span>
+                        <span className="text-accent-pink  font-lato">Niko Lewis</span>
                         <span className="flex items-center space-x-1">
                 <span className="text-accent-cyan text-2xl font-mono">{`<`}</span>
                 <img src="/pastelfeather.png" className="w-8 h-8" alt="Niko Lewis Portfolio Feather Logo"/>

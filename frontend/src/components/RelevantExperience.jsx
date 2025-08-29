@@ -125,10 +125,9 @@ const ExperienceItem = ({ experience, index }) => {
 };
 
 const relevantExperience = () => {
-
     return (
 
-        <section id="relevant-experience" className="w-full py-20 text-white bg-cover bg-no-repeat" style={{ backgroundImage: 'url("sandro-katalina-k1bO_VTiZSs-unsplash.jpg")'}}>
+        <section id="relevant-experience" className="w-full py-20 text-white bg-cover bg-no-repeat" style={{ backgroundImage: 'url("sarah-richer-PrDVRU9Ud_w-unsplash.jpg")'}}>
 
             <div className="container mx-auto px-4">
 

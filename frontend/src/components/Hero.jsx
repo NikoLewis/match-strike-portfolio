@@ -1,5 +1,10 @@
 import React from 'react';
 
+//testing to see is hero is less busy without the duplicate name
+// <h1 className="text-7xl md:text-8xl font-montserrat font-bold mb-4 drop-shadow-lg leading-tight">
+//     Niko Lewis
+// </h1>
+
 const Hero = () => {
     const pulsingKeyframes = `
       @keyframes pulse {
@@ -16,9 +21,7 @@ const Hero = () => {
                 <div className="container mx-auto px-4">
 
                     <div className="relative z-10 p-6 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
-                        <h1 className="text-7xl md:text-8xl font-montserrat font-extrabold mb-4 drop-shadow-lg leading-tight">
-                            Niko Lewis
-                        </h1>
+
                         <p className="text-3xl md:text-4xl text-accent-cyan font-lato font-light mb-8 drop-shadow-md">
                             Software Engineer <span className="inline-flex items-center space-x-2 relative top-[-0.1em]" style={{ animation: 'pulse 2s infinite ease-in-out' }}>
 

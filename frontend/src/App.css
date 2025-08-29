@@ -1,16 +1,28 @@
 @import "tailwindcss";
 /*reference to my fonts below*/
-/*--font-poppins: 'Poppins', sans-serif;*/
 
+/*family=Cookie */
+/*family=Crimson*/
+/* family=Playfair*/
+
+
+
+/*new pink #BE1AC7*/
+/*old pink #FF69B4*/
+/*new teal c*/
+/*old teal #00bcd4*/
 /*1041 x 494 my loaner laptops fullscreen*/
 @theme {
     --color-dark-purple-start: #370258;
     --color-dark-purple-end: #1a012f;
     --color-accent-cyan: #00bcd4;
-    --color-accent-pink: #FF69B4;
+    --color-accent-pink: #BE1AC7;
     --font-mono: 'Monoserrat', sans-serif;
     --font-lato: 'Lato', sans-serif;
     --font-poppins: 'poppins', sans-serif;
+    --font-cookie: "cookie", sans-serif;
+    --font-playfair: "playfair", serif;
+    --font-crimson: "crimson", serif;
     --breakpoint-md: 1020px;
     --breakpoint-timelineBP: 1004px;
 
@@ -23,11 +35,11 @@ body {
 h1 {
     color:var(--color-accent-pink);
     font-family: var(--font-poppins);
-    font-size: var(--text-5xl);
+    font-size: var(--text-4xl);
 }
 
 
 h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Monserat', sans-serif;
     color: var(--color-accent-cyan);
 }

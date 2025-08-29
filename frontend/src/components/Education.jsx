@@ -16,10 +16,6 @@ const educationEntries = [
         year: 'February 2021 - July 2021',
         earned: "AWS SysOps Associate certification earned",
         icon: FaCertificate,
-        description:
-            "22-week training course developed and taught by AWS Executives, Solution Architects, Technical Account Managers, and Cloud Engineers-- with a focus on: AWS Fundamentals, AWS SysOps, extensive hands-on labs/ projects, certification prep, and real-word cloud support cases and drills supported by instructors from large Enterprises with IT Cloud strategy."
-
-
     },
     {
         type: 'Associate\'s degree',
@@ -37,7 +33,6 @@ const EducationItem = ({ entry }) => (
             <p className="text-xl text-white mt-1">{entry.program}</p>
             {entry.year && <p className="text-lg text-gray-400 mt-1">{entry.year}</p>}
             {entry.type && <span className="text-sm text-indigo-300 bg-dark-purple-start px-2 py-0.5 rounded-full mt-2 inline-block">{entry.type}</span>} {entry.earned && <span className="text-sm text-indigo-300 bg-dark-purple-start px-2 py-0.5 rounded-full mt-2 inline-block">{entry.earned}</span>}
-            {entry.description && <p className="text-lg text-gray-400 mt-1">{entry.description}</p>}
         </div>
     </div>
 );
