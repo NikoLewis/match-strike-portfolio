@@ -6,11 +6,7 @@ function Contact() {
     // style={{ backgroundImage: "url('/CuriousKittenAdamGonzales.jpg')" }}// experimenting with images
     return (
         <section id="contact" className="container mx-auto px-4 py-20 text-white text-center  bg-contain bg-no-repeat" >
-
-
-
-
-            <div id="cat-container" className="flex items-center  justify-around ">
+            <div id="cat-container" className="flex items-center  justify-between ">
                 <img src="/CuriousKittenAdamGonzales.jpg" className="bg-no-repeat bg-contain max-w-2/4 "/>
 
                 <div id="contact-container" className="flex items-center  justify-between content-between flex-col">

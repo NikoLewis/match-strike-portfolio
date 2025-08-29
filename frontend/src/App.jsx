@@ -32,13 +32,13 @@ function App() {
                         <Route path="/" element={
                             <>
                                 <Hero />
-                                <About />
                                 <Skills />
+                                <About />
                                 <RelevantExperience />
-                                <Testimonials />
                                 <Projects />
-                                <Contact />
+                                <Testimonials />
                                 <Education />
+                                <Contact />
                                 <OtherExperience />
 
                             </>

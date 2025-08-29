@@ -128,11 +128,11 @@ const relevantExperience = () => {
 
     return (
 
-        <section id="relevant-experience" className="w-full py-20 text-white">
+        <section id="relevant-experience" className="w-full py-20 text-white bg-cover bg-no-repeat" style={{ backgroundImage: 'url("sandro-katalina-k1bO_VTiZSs-unsplash.jpg")'}}>
 
             <div className="container mx-auto px-4">
 
-                <h2 className="text-5xl font-montserrat font-bold text-center mb-16">Experience</h2>
+                <h2 className="text-5xl font-montserrat font-bold text-center mb-16 relative z-10 p-6 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">Experience</h2>
 
                 <div className="relative flex flex-col items-center">
 

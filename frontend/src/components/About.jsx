@@ -8,9 +8,10 @@ import React from 'react';
 
 const About = () =>  {
     return (
-        <section id="about" className="py-20 text-white">
+        <section id="about" className="py-20 text-white z-10 p-1 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
             <div className="container mx-auto px-4">
-                <h2 className="text-5xl font-montserrat font-bold text-center mb-12">Unique Value I Bring To Organizations</h2>
+                <h2 className="text-5xl font-montserrat font-bold text-center mb-12 ">
+                    Unique Value I Bring To Organizations</h2>
 
                 <p className="text-xl font-poppins text-accent-pink italic  text-center mb-16">"My transition from managing tech projects <br/>to developing them as a software engineer, <br/>has been an adventure."</p>
                 <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">

@@ -64,7 +64,10 @@ function Skills() {
         <section id="skills" className=" py-20 text-white relative overflow-hidden">
             <div className="w-11/12 w-  mx-auto px-4">
                 <style>{marqueeKeyframes}</style>
-                <h2 className="text-5xl font-montserrat font-bold text-center mb-12">My Skills</h2>
+                <h2 className="text-5xl font-montserrat font-bold text-center mb-12 z-10 p-3 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
+                    My Skills</h2>
+<div className="bg-cover bg-no-repeat" style={{ backgroundImage: 'url("luke-chesser-eICUFSeirc0-unsplash.jpg")'}}>
+
 
                 <div className="w-full relative py-8 overflow-hidden group" onMouseEnter={() => setIsPaused1(true)}
                      onMouseLeave={() => setIsPaused1(false)}>
@@ -120,7 +123,7 @@ function Skills() {
                     <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-dark-purple-start to-transparent"></div>
                     <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-dark-purple-start to-transparent"></div>
                 </div>
-
+</div>
             </div>
         </section>
     );

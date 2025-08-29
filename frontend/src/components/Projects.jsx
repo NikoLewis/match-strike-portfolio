@@ -88,10 +88,12 @@ const ProjectCard = ({ project }) => (
 );
 
 
-function Projects() {
+const Projects = () => {
+
     return (
-        <section id="projects" className="container mx-auto px-4 py-20 text-white">
-            <h2 className="text-5xl font-montserrat font-bold text-center mb-12">Projects</h2>
+        <section id="projects" className="container mx-auto px-4 py-20 text-white z-10 p-1 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
+            <h2 className="text-5xl font-montserrat font-bold text-center mb-12">
+                Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
                 {projects.map((project) => (
                     <ProjectCard key={project.id} project={project} />
