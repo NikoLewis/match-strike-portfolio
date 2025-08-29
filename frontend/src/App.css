@@ -30,6 +30,9 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--color-dark-purple-start);
 }
 
 h1 {
