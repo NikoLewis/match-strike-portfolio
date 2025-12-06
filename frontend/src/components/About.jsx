@@ -1,16 +1,11 @@
 import React from 'react';
 
-
-//general summary:
-//I leverage pattern recognition and a strong technical skillset to transform complex challenges into innovative solutions that exceed expectations. My talent also lies in understanding the people behind the screens.
-// Applying human-centered storytelling and emotional intelligence professionally leads to uncovering client goals to craft products that genuinely help them succeed. This same approach allows me to empower teams and foster authentic connections.
-
-
 const About = () =>  {
     return (
         <section id="about" className="py-20 text-white z-10 p-1 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
             <div className="container mx-auto px-4">
-                <h2 className="text-5xl font-montserrat font-bold text-center mb-12 ">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-bold text-center mb-8 sm:mb-12 relative z-5 p-3 sm:p-4 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
+
                     Unique Value I Bring To Organizations</h2>
 
                 <p className="text-xl font-poppins text-accent-pink italic  text-center mb-16">"My transition from managing tech projects <br/>to developing them as a software engineer, <br/>has been an adventure."</p>
@@ -25,7 +20,7 @@ const About = () =>  {
                             "My talent also lies in understanding the people behind the screens."
 
                         </p>
-                        <p className="mb-6">By applying human-centered storytelling and emotional intelligence, I can uncover a clients' core goals and craft products that help them excel. These abilities allow me to <span className="text-accent-cyan font-bold">empower teams</span> and <span className="text-accent-cyan font-bold">build authentic connections cross-functionally </span>.</p>
+                        <p className="mb-6">By applying human-centered storytelling and emotional intelligence, I can uncover a client's core goals and craft products that help them excel. These abilities allow me to <span className="text-accent-cyan font-bold">empower teams</span> and <span className="text-accent-cyan font-bold">build authentic connections cross-functionally </span>.</p>
 
 
 

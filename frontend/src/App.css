@@ -1,18 +1,4 @@
 @import "tailwindcss";
-/*reference to my fonts below*/
-
-/*family=Cookie */
-/*family=Crimson*/
-/* family=Playfair*/
-
-
-
-/*new pink #BE1AC7*/
-/*old pink #FF69B4*/
-/*new teal c*/
-/*old teal #00bcd4*/
-/*1041 x 494 my loaner laptops fullscreen*/
-/*Note to Future Niko: Try out text-4xl for section titles*/
 @theme {
     --color-dark-purple-start: #370258;
     --color-dark-purple-end: #1a012f;
@@ -31,8 +17,6 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     background-color: var(--color-dark-purple-start);
 }
 

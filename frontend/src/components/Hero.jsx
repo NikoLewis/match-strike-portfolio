@@ -1,10 +1,5 @@
 import React from 'react';
 
-//testing to see is hero is less busy without the duplicate name
-// <h1 className="text-7xl md:text-8xl font-montserrat font-bold mb-4 drop-shadow-lg leading-tight">
-//     Niko Lewis
-// </h1>
-
 const Hero = () => {
     const pulsingKeyframes = `
       @keyframes pulse {
@@ -21,8 +16,7 @@ const Hero = () => {
                 <div className="container mx-auto px-4">
 
                     <div className="relative z-10 p-6 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
-
-                        <p className="text-3xl md:text-4xl text-accent-cyan font-lato font-light mb-8 drop-shadow-md">
+                        <p className="text-accent-cyan text-3xl sm:text-4xl lg:text-5xl font-montserrat font-bold text-center mb-8 sm:mb-12 relative z-5 p-3 sm:p-4 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
                             Software Engineer <span className="inline-flex items-center space-x-2 relative top-[-0.1em]" style={{ animation: 'pulse 2s infinite ease-in-out' }}>
 
                 <span className="text-accent-pink text-4xl md:text-5xl font-mono">{`  <`}</span>
@@ -30,8 +24,8 @@ const Hero = () => {
                             <span className="text-accent-pink text-4xl md:text-5xl font-mono">{`/>`}</span>
               </span>
                         </p>
-                        <p className="mb-6">
-                            My hands-on foundation of apprenticeships, open-source contributions, freelance projects, and leading technical workshops has fueled my passion for creating exceptional user experiences using HTML, CSS, JavaScript, React, and UX/UI principles.
+                        <p className="text-xl font-poppins  italic  text-center mb-16">
+                            My hands-on foundation from apprenticeships, open-source contributions, freelance projects, and leading technical workshops has fueled my passion for creating exceptional user experiences using HTML, CSS, JavaScript, React, and UX/UI principles.
                         </p>
                     </div>
                 </div>

@@ -2,8 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 
-
-
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -16,42 +14,34 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-
 function App() {
-
   return (
     <>
         <Router>
-            <div id="fixed-navbar" className="relative min-h-screen bg-gradient-to-br from-dark-purple-start to-dark-purple-end text-white font-lato">
-
-
+            <div id="fixed-navbar" className="min-h-screen bg-gradient-to-br from-dark-purple-start to-dark-purple-end text-white font-lato">
                 <Navbar />
 
-                <main className="py-8">
+                <main>
                     <Routes>
                         <Route path="/" element={
                             <>
                                 <Hero />
-                                <Skills />
                                 <About />
+                                <Skills />
+                                <Education />
                                 <RelevantExperience />
                                 <Projects />
                                 <Testimonials />
-                                <Education />
                                 <Contact />
                                 <OtherExperience />
-
                             </>
                         } />
-                      
                     </Routes>
                 </main>
 
                 <Footer />
             </div>
         </Router>
-
-
     </>
   )
 }

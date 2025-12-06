@@ -46,15 +46,6 @@ const marqueeKeyframes = `
 `;
 
 function Skills() {
-    //Injected marquee keyframes inside style element for continuous scroll
-    //Fixed clipped scrollbar by replacing tailwind utility classes container with 91.6667% width in parent div withing #skills section
-    //Changed animation property in the style attribute from 60 to 15s for faster scroll speed
-    //Duplicated content of map to create seamless loop effect
-    // So more of the skills could be seen in one glance: Split original 21 skills array into 4 smaller arrays of 5 or so, each with their own scrolling container, and different animation speeds to make the rows visually distinct
-    // Added fading overlay at edges of each "scrolling row of skills" for smoothness
-    //to make pause on hover work each row needed it's own state also css inline style had higher specificity and was overriding group-hover:animation-play-state-paused class
-    // Ended up using the useState hook to note paused vs unpaused and added conditional rendering inline in addition to scroll speed
-
     const [isPaused1, setIsPaused1] = useState(false);
     const [isPaused2, setIsPaused2] = useState(false);
     const [isPaused3, setIsPaused3] = useState(false);
@@ -64,11 +55,9 @@ function Skills() {
         <section id="skills" className=" py-20 text-white relative overflow-hidden">
             <div className="w-11/12 w-  mx-auto px-4">
                 <style>{marqueeKeyframes}</style>
-                <h2 className="text-5xl font-montserrat font-bold text-center mb-12 z-10 p-3 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-bold text-center mb-8 sm:mb-12 relative z-5 p-3 sm:p-4 bg-gradient-to-br from-dark-purple-start/70 to-dark-purple-end/70 rounded-lg shadow-2xl backdrop-blur-sm">
                     My Skills</h2>
 <div className="bg-cover bg-no-repeat" style={{ backgroundImage: 'url("luke-chesser-eICUFSeirc0-unsplash.jpg")'}}>
-
-
                 <div className="w-full relative py-8 overflow-hidden group" onMouseEnter={() => setIsPaused1(true)}
                      onMouseLeave={() => setIsPaused1(false)}>
                     <div className="flex animate-marquee " style={{ animation: isPaused1 ? 'marquee 12s linear infinite paused' : 'marquee 12s linear infinite' }}>
@@ -82,7 +71,6 @@ function Skills() {
                     <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-dark-purple-start to-transparent"></div>
                     <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-dark-purple-start to-transparent"></div>
                 </div>
-
                     <div className="w-full relative py-8 overflow-hidden group" onMouseEnter={() => setIsPaused2(true)}
                          onMouseLeave={() => setIsPaused2(false)}>
                         <div className="flex animate-marquee min-w-full" style={{ animation: isPaused2 ? 'marquee 12s linear infinite paused' : 'marquee 15s linear infinite' }}>
@@ -123,7 +111,7 @@ function Skills() {
                     <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-dark-purple-start to-transparent"></div>
                     <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-dark-purple-start to-transparent"></div>
                 </div>
-</div>
+                </div>
             </div>
         </section>
     );
