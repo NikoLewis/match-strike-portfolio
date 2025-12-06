@@ -10,7 +10,7 @@ This repository hosts my personal portfolio website, designed to serve as a cent
 
 | Detail | Link |
 | :--- | :--- |
-| **Live Portfolio** | **[https://nikolewis.netlify.app/#]** |
+| **Live Portfolio** | **https://nikolewis.netlify.app/#** |
 | **GitHub Repo** | [https://github.com/NikoLewis/match-strike-portfolio](https://github.com/NikoLewis/match-strike-portfolio) |
 | **Status** | Active / Under Development |
 
